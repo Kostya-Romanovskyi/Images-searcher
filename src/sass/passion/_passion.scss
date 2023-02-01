@@ -1,0 +1,100 @@
+.passion__container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.passion {
+    @include section(40px);
+    background-color: $main-bg-color;
+}
+.passion__wrap-title {
+    @media screen and (min-width: 768px) {
+        width: 344px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 60%;
+    }
+}
+.passion__subtitle {
+    @include sub__title(18px, 1.22, $main-color, left);
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+        @include sub__title(26px, 1.22, $main-color, left);
+    }
+}
+.passion__title {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    margin-bottom: 42px;
+
+    color: $main-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+
+        margin-bottom: 0;
+    }
+}
+.social {
+    @media screen and (min-width: 768px) {
+        align-self: flex-end;
+
+        margin-bottom: 20px;
+    }
+}
+.social__list {
+    @extend %list;
+    display: flex;
+    justify-content: flex-end;
+
+    margin-bottom: 38px;
+}
+.social__item {
+    &:not(:last-child) {
+        margin-right: 28px;
+    }
+}
+.social__link {
+}
+.social__icon {
+    fill: $buttons-bg-color;
+    stroke: $main-bg-color;
+}
+.social__text {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+
+    text-align: right;
+
+    color: $secondary-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+}
+.social__tel {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+
+    text-align: right;
+    text-decoration: none;
+
+    color: $main-color;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+    }
+}

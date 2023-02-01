@@ -1,0 +1,22 @@
+.footer {
+    @include section(16px);
+    border-top: 1px solid $line-bg-color;
+    background-color: $main-bg-color;
+}
+.footer__text {
+    font-family: $main-font;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+
+    text-align: center;
+
+    color: $footer-color;
+
+    @media screen and (max-width: 767px) {
+        width: 150px;
+
+        margin: 0 auto;
+    }
+}

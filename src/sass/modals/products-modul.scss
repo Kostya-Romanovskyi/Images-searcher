@@ -1,0 +1,150 @@
+.products__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding: 40px 20px;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: rgba(182, 175, 175, 0.548);
+
+    z-index: 50;
+    overflow-y: scroll;
+
+    opacity: 0;
+    pointer-events: none;
+
+    &.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-open {
+    overflow: hidden;
+}
+.products__modal {
+    position: relative;
+
+    margin: 0 auto;
+    padding: 32px 20px;
+
+    width: 280px;
+
+    text-align: center;
+
+    background-color: $main-color;
+    border: 2px solid $buttons-bg-color;
+    border-radius: 10px;
+}
+.products__modal-button {
+    position: absolute;
+    top: 15px;
+    right: 11px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+.products__modal-title {
+    font-family: $secondary-font;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    margin-bottom: 22px;
+
+    color: $secondary-color;
+}
+
+.products__modal-img {
+    margin: 0 auto;
+    margin-bottom: 24px;
+
+    border-bottom: 7px solid rgba(156, 190, 143, 0.7);
+
+    &--border {
+        border-radius: 50%;
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+        box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+    }
+}
+
+.ice-cream__list {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 39px;
+}
+.ice-cream__item {
+    position: relative;
+
+    width: 53px;
+    height: 72px;
+
+    border: 2px solid #9cbe8f;
+    border-radius: 40px;
+}
+.ice-cream__numbers {
+    position: absolute;
+    top: -1px;
+    left: 6%;
+
+    width: 43px;
+    height: 43px;
+
+    padding-top: 5px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 2.8;
+
+    border: 2px solid #9cbe8f;
+    border-radius: 50%;
+
+    color: $secondary-color;
+    background: #9cbe8f;
+    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+}
+.ice-cream__info {
+    font-size: 10px;
+    line-height: 12px;
+
+    padding-top: 50px;
+
+    color: $secondary-color;
+}
+
+.ingredients {
+}
+.ingredients__list {
+    @extend %list;
+    margin-bottom: 48px;
+}
+.ingredients__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 11px;
+    }
+}
+.ingredients__name {
+    font-size: 14px;
+    line-height: 1.76;
+    text-align: left;
+
+    letter-spacing: 0.04em;
+
+    color: $secondary-color;
+}

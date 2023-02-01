@@ -1,0 +1,20 @@
+@import "./variables";
+@import "./common";
+@import "./mixins";
+@import "./placeholders";
+@import "./header/header";
+@import "./hero/hero";
+@import "./products/products";
+@import "./how-it-made/howmade";
+@import "./galary/galary";
+@import "./reviewe/swiper-reviewe";
+@import "./locations/locations";
+@import "./passion/passion";
+@import "./footer/footer";
+
+// modals
+@import "../sass/modals/modal-header.scss";
+@import "../sass/modals/products-modul.scss";
+@import "../sass/modals/read-more.scss";
+@import "../sass/modals/locations-modal.scss";
+@import "../sass/modals/franchise.scss";

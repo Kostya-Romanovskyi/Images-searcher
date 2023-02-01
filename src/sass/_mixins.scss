@@ -1,0 +1,66 @@
+// BUTTONS
+@mixin main__button($fz, $width, $height) {
+    // display: block;
+
+    font-weight: 600;
+    font-size: $fz;
+    line-height: 1.2;
+    text-align: center;
+
+    width: $width;
+    height: $height;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: $buttons-bg-color;
+    color: $secondary-color;
+}
+
+@mixin secondary__button($fz, $lh, $width, $height) {
+    font-family: $main-font;
+    font-weight: 600;
+    font-size: $fz;
+    line-height: $lh;
+
+    width: $width;
+    height: $height;
+
+    color: $secondary-color;
+    background-color: transparent;
+
+    border: 2px solid $buttons-bg-color;
+    border-radius: 8px;
+}
+
+// TITLE - SUBTITLE
+@mixin title($fz, $lh, $color) {
+    display: block;
+
+    font-family: $secondary-font;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: 0.04em;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    color: $color;
+}
+
+@mixin sub__title($fz, $lh, $color, $ta: center) {
+    font-family: $main-font;
+    font-weight: 800;
+    font-size: $fz;
+    line-height: $lh;
+
+    text-align: $ta;
+    text-transform: uppercase;
+
+    color: $color;
+}
+// SECTION
+
+@mixin section($padding) {
+    padding: $padding 0;
+}

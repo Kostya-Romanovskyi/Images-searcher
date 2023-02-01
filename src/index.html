@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <!-- LINK FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@400;500;600;700;800;900&family=Roboto:wght@700&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SWIPPER SLIDER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+
+    <!-- SCRIPT -->
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body class="">
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/howmade.html"></include>
+    <include src="./partials/galary.html"></include>
+    <include src="./partials/swiper-reviews.html"></include>
+    <include src="./partials/locations.html"></include>
+    <include src="./partials/passion.html"></include>
+    <include src="./partials/footer.html"></include>
+
+    <!-- modals -->
+    <!-- header -->
+    <include src="./partials/modals/modal-header.html"></include>
+    <include src="./partials/modals/modal-header-mobile.html"></include>
+    <!-- products -->
+    <include src="./partials/modals/products/modal-1.html"></include>
+    <include src="./partials/modals/products/modal-2.html"></include>
+    <include src="./partials/modals/products/modal-3.html"></include>
+
+    <!-- how it made (read more)-->
+    <include src="./partials/modals/read-more.html"></include>
+
+    <!-- locations -->
+    <include src="./partials/modals/locations-modal.html"></include>
+
+    <!-- franchise -->
+    <include src="./partials/modals/franchise-modal.html"></include>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

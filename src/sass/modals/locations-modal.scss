@@ -1,0 +1,47 @@
+.locations__modal-button {
+    position: absolute;
+    top: 15px;
+    right: 11px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+.locations__modal-icon {
+}
+.locations__modal-title {
+    @extend %modal-title;
+    margin-bottom: 20px;
+}
+.locations__modal-map {
+    margin-bottom: 20px;
+}
+.locations__modal-btn {
+    @include main__button(12px, 134px, 42px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    margin: 0 auto;
+
+    cursor: pointer;
+}
+.map {
+    margin-bottom: 32px;
+
+    width: 232px;
+    height: 134px;
+
+    @media screen and (min-width: 400px) {
+        width: 323px;
+        height: 189px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 500px;
+        height: 300px;
+    }
+}

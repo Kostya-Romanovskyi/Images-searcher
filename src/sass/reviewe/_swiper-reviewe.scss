@@ -1,0 +1,93 @@
+.reviews {
+    @include section(80px);
+}
+
+.swiper {
+    width: 100%;
+    height: 450px;
+
+    @media screen and (min-width: 360px) {
+        height: 423px;
+    }
+
+    @media screen and (min-width: 445px) {
+        // height: 423px;
+        height: 393px;
+
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 370px;
+
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 349px;
+    }
+}
+
+.swiper .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: $bullets-color;
+    opacity: 0.5;
+
+    &-active {
+        background-color: $main-bg-color;
+        opacity: 1;
+    }
+}
+
+.swiper-wrapper {
+    @extend %list;
+}
+.swiper-slide {
+}
+.swiper__user {
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+.swiper__comment {
+    font-family: $main-font;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.55;
+
+    padding: 34px 39px;
+    margin-bottom: 32px;
+
+    text-align: center;
+
+    color: $main-color;
+    background-color: $main-bg-color;
+
+    border-radius: 10px;
+
+    @media screen and (min-width: 1200px) {
+        width: 990px;
+        margin: 0 auto 20px auto;
+    }
+}
+.swiper__place {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.85;
+
+    text-align: center;
+
+    color: $secondary-color;
+}
+.swiper-pagination {
+}
+.swiper-button-prev::after {
+    display: none;
+}
+.swiper-button-next::after {
+    display: none;
+}
+.swiper-scrollbar {
+}

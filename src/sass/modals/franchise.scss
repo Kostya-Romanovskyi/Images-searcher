@@ -1,0 +1,44 @@
+.franchise__modal-button {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+.franchise__modal-icon {
+}
+.franchise__modal-title {
+    @extend %modal-title;
+    margin-bottom: 20px;
+}
+.franchise__modal-text {
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: $secondary-color;
+
+    margin-bottom: 20px;
+}
+
+.input__email {
+    font-size: 12px;
+    line-height: 1.4;
+
+    color: $secondary-color;
+
+    width: 100%;
+
+    padding: 12px 7px;
+    margin-bottom: 12px;
+
+    background-color: rgba(248, 210, 78, 0.1);
+    border: 1px solid $main-bg-color;
+    border-radius: 10px;
+}
+.franchise__modal-btn {
+    @include main__button(12px, 134px, 42px);
+    cursor: pointer;
+}
