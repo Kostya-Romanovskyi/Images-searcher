@@ -1,2 +1,3 @@
-# Project written by myself
-Using HTML, CSS, SCSS, JavaScript, AJAX, REST API, Parcel
+# Using HTML, CSS, SCSS, JavaScript, AJAX, REST API, Parcel
+Project written by myself
+
